@@ -1,0 +1,412 @@
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+
+  footer {
+    text-align: center;
+  }
+  
+  footer .copyright {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border: 2px solid black;
+    overflow-x: auto;
+    }
+
+    table th{
+    text-transform: uppercase;
+    }
+
+    th,td{
+    padding: 5px;
+    border-right: 1px dashed black;
+    }
+
+    tr{
+        border-bottom: 2px solid black;   
+    }
+
+    button{
+        border-radius: 20%;
+    }
+  
+    .WelcomeContainer h2,h3{
+     text-align: center;
+    }
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputs input{
+       margin-right: 0.5rem;
+    }
+    input ,select{
+    width: 20%;
+    height: 5%;
+    }
+    input:focus{
+        
+        transform: scale(1.1);
+        }
+
+    #subinput0{
+        width: 20%;
+        
+        margin: 1rem auto; 
+    }
+    #subinput0:hover{
+        letter-spacing:2px;   
+    }
+
+    form{
+        margin:0.5rem;
+        padding: 1rem;
+        border: 1px solid #050505;
+    }
+
+    #table_div{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        margin: 0 0.5rem;
+    }
+
+    /* #tablemain{
+        font-size: 10px;
+    } */
+    @media (max-width: 1000px) {
+        .inputs{
+           flex-direction: column;
+        } 
+        table{
+            font-size: 10px;
+        }
+
+        input{
+            width: 70%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+             input,select{
+            width: 71%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+
+
+            tr button{
+               font-size: 0px;
+               border-radius: 50%;
+               width: 20px;
+               height: 20px;
+            }
+    }
+
+    /* .nav{
+        background-color: rgb(127, 217, 255);
+    } */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+
+  footer {
+    text-align: center;
+  }
+  
+  footer .copyright {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border: 2px solid black;
+    overflow-x: auto;
+    }
+
+    table th{
+    text-transform: uppercase;
+    }
+
+    th,td{
+    padding: 5px;
+    border-right: 1px dashed black;
+    }
+
+    tr{
+        border-bottom: 2px solid black;   
+    }
+
+    button{
+        border-radius: 20%;
+    }
+  
+    .WelcomeContainer h2,h3{
+     text-align: center;
+    }
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputs input{
+       margin-right: 0.5rem;
+    }
+    input ,select{
+    width: 20%;
+    height: 5%;
+    }
+    input:focus{
+        
+        transform: scale(1.1);
+        }
+
+    #subinput0{
+        width: 20%;
+        
+        margin: 1rem auto; 
+    }
+    #subinput0:hover{
+        letter-spacing:2px;   
+    }
+
+    form{
+        margin:0.5rem;
+        padding: 1rem;
+        border: 1px solid #050505;
+    }
+
+    #table_div{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        margin: 0 0.5rem;
+    }
+
+    /* #tablemain{
+        font-size: 10px;
+    } */
+    @media (max-width: 1000px) {
+        .inputs{
+           flex-direction: column;
+        } 
+        table{
+            font-size: 10px;
+        }
+
+        input{
+            width: 70%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+             input,select{
+            width: 71%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+
+
+            tr button{
+               font-size: 0px;
+               border-radius: 50%;
+               width: 20px;
+               height: 20px;
+            }
+    }
+
+    /* .nav{
+        background-color: rgb(127, 217, 255);
+    } */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+
+  footer {
+    text-align: center;
+  }
+  
+  footer .copyright {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border: 2px solid black;
+    overflow-x: auto;
+    }
+
+    table th{
+    text-transform: uppercase;
+    }
+
+    th,td{
+    padding: 5px;
+    border-right: 1px dashed black;
+    }
+
+    tr{
+        border-bottom: 2px solid black;   
+    }
+
+    button{
+        border-radius: 20%;
+    }
+  
+    .WelcomeContainer h2,h3{
+     text-align: center;
+    }
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputs input{
+       margin-right: 0.5rem;
+    }
+    input ,select{
+    width: 20%;
+    height: 5%;
+    }
+    input:focus{
+        
+        transform: scale(1.1);
+        }
+
+    #subinput0{
+        width: 20%;
+        
+        margin: 1rem auto; 
+    }
+    #subinput0:hover{
+        letter-spacing:2px;   
+    }
+
+    form{
+        margin:0.5rem;
+        padding: 1rem;
+        border: 1px solid #050505;
+    }
+
+    #table_div{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        margin: 0 0.5rem;
+    }
+
+    /* #tablemain{
+        font-size: 10px;
+    } */
+    @media (max-width: 1000px) {
+        .inputs{
+           flex-direction: column;
+        } 
+        table{
+            font-size: 10px;
+        }
+
+        input{
+            width: 70%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+             input,select{
+            width: 71%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+
+
+            tr button{
+               font-size: 0px;
+               border-radius: 50%;
+               width: 20px;
+               height: 20px;
+            }
+    }
+
+    /* .nav{
+        background-color: rgb(127, 217, 255);
+    } */
