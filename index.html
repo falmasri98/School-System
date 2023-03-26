@@ -31,39 +31,111 @@
 
   </div>
   <main>
-    <section>
-      <h2>Add a Student</h2>
-      <form id="student-form">
+    <!-- <section> -->
+      <!-- <h2>Add a Student</h2> -->
+      <!-- <form id="datasub" > -->
+        <!-- <h3>Add students informations</h3>
+          <div class="inputs">
+          <input id="username"   name="username"   placeholder="Full name"     type="text" id="name_link0" required>  
+          
+          <input id="usernumber" name="usernumber" placeholder="phone number"  type="text" id="category_0" required> -->
+          <!-- <input id="usergrade"  name="usergrade"  placeholder="grade"         type="text" id="category_0" required> -->
+          <!-- <input id="userDOB"    name="userDOB"    placeholder="Date of birth" type="date" id="link_add_0" required> -->
+          <!-- <div>
+            <label for="gender">Gender:</label>
+            <select id="usergender"  name="usergender" >
+                            <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       
+            <select id="usermajor"  name="usermajor" > 
+              <option value="Administration">Administration</option>
+              <option value="IT">IT</option>
+              <option value="Science">Science</option>
+              <option value="Art">Art</option>
+              </select>
+              
+              <input id="userimg" name="userimg" value="images/logo.png" placeholder="user image src"  type="text" id="category_0" required>
+  
+          </div>
+          <div class="inputs">
+              <input id="subinput0" type="submit" value="Add" >
+  
+          </div>
+         
+   
+      </form> -->
+      <!-- <form id="datasub">
         <div>
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" required />
+          <label for="username">Full Name:</label>
+          <input type="text" id="name_link0" required />
         </div>
         <div>
-          <label for="dob">Date of Birth:</label>
-          <input type="date" id="dob" required />
+          <label for="userDOB">Date of Birth:</label>
+          <input type="date" id="link_add_0" required />
         </div>
         <div>
-          <label for="gender">Gender:</label>
-          <select id="gender" required>
+          <label for="usermajor">Major:</label>
+          <select id="usermajor" name="usermajor" required>
+            <option value="">-- Select Major --</option>
+            <option value="administration">Administration</option>
+            <option value="it">IT</option>
+            <option value="science">Science</option>
+            <option value="art">Art</option>
+          </select>
+        </div>
+        <div>
+          <label for="usergender">Gender:</label>
+          <select id="usergender" required>
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
         </div>
         <div>
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" required />
+          <label for="usernumber">Phone Number:</label>
+          <input type="tel" id="category_0" required />
         </div>
         <div>
-          <label for="grade">Grade:</label>
-          <input type="number" id="grade" required />
+          <label for="usergrade">Grade:</label>
+          <input type="number" id="category_0" required />
         </div>
-        <button type="submit">Add Student</button>
+        
+        <div>
+          <label for="image-url">Image:</label>
+          <input id="userimg" name="userimg" value="images/logo.png" placeholder="user image src"  type="text" id="category_0" required>
+
+        </div>
+        <div class="inputs">
+          <input id="subinput0" type="submit" value="Add" >
+
+      </div>
       </form>
     </section>
     <section>
       <h2>Students</h2>
-      <table id="student-table">
+      
+      <div class="WelcomeContainer">
+        <h3>students informations</h3>
+       </div>
+  
+  <div style="min-height: 25rem;">
+  
+    <div id="student_card">
+  
+    
+  
+  
+    </div>
+  
+  
+  </div> -->
+      <!-- <h2>Student List</h2> -->
+        <!-- <div id="cards-container"></div> -->
+      <!-- </section> -->
+      <!-- <table id="student-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -74,8 +146,76 @@
           </tr>
         </thead>
         <tbody></tbody>
-      </table>
-    </section>
+      </table> -->
+    <!-- </section> -->
+
+    
+
+  
+    <form id="datasub" >
+      <h3>Add students informations</h3>
+        <!-- <div class="inputs"> -->
+        <div>
+          <input id="username"   name="username"   placeholder="Full name"     type="text" id="name_link0" required>
+        </div>  
+       <div>
+        <input id="usernumber" name="usernumber" placeholder="phone number"  type="text" id="category_0" required>
+       </div> 
+       <div>
+        <input id="usergrade"  name="usergrade"  placeholder="grade"         type="text" id="category_0" required>
+      </div>
+      <div>
+      <input id="userDOB"    name="userDOB"    placeholder="Date of birth" type="date" id="link_add_0" required>
+</div>
+<div>
+        <select id="usergender"  name="usergender" > 
+          <option value="male">male</option>
+          <option value="female">female</option>
+   
+          </select>
+        </div>
+        <div>
+          <select id="usermajor"  name="usermajor" > 
+            <option value="Administration">Administration</option>
+            <option value="IT">IT</option>
+            <option value="Science">Science</option>
+            <option value="Art">Art</option>
+            </select>
+          </div>
+
+          <div>
+            <input id="userimg" name="userimg" value="img\user (1).png" placeholder="user image src"  type="text" id="category_0" >
+          </div>
+          <div>
+            <input id="subinput0" type="submit" value="Add" >
+          </div>
+        <!-- </div> -->
+        <!-- <div class="inputs">
+            
+          </div> -->
+        <!-- </div> -->
+       
+ 
+    </form>
+
+  
+
+    <div class="WelcomeContainer">
+      <h3>students informations</h3>
+     </div>
+
+<div style="min-height: 25rem;">
+
+  <div id="student_card">
+
+  
+
+
+  </div>
+
+
+</div>
+
   </main>
 
 

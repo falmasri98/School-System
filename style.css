@@ -273,7 +273,7 @@ table{
     /* .nav{
         background-color: rgb(127, 217, 255);
     } */
-header {
+/* header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
@@ -374,12 +374,12 @@ table{
         flex-direction: column;
         overflow-y: auto;
         margin: 0 0.5rem;
-    }
+    } */
 
     /* #tablemain{
         font-size: 10px;
     } */
-    @media (max-width: 1000px) {
+    /* @media (max-width: 1000px) {
         .inputs{
            flex-direction: column;
         } 
@@ -405,8 +405,66 @@ table{
                width: 20px;
                height: 20px;
             }
-    }
+    } */
 
     /* .nav{
         background-color: rgb(127, 217, 255);
     } */
+
+
+    
+    #student_card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+    #student_card div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(94, 66, 66, 0.745);
+      padding: 0.5rem;
+      border: 1px solid #050505;
+      border-radius: 0.5rem;
+    }
+    #student_card div img{
+        width: 100px;
+        height: 100px;
+      }
+
+    ul {
+        list-style-type: none;
+     }
+    
+    @media (max-width: 1000px) {
+        .inputs{
+           flex-direction: column;
+        } 
+      
+
+        input{
+            width: 70%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+             input,select{
+            width: 71%;
+            height: 10%;
+            margin-bottom: 5px;
+            }
+
+
+         
+            #student_card{
+              
+                grid-template-columns: repeat(2,1fr);
+            
+            }
+           
+
+          
+    }

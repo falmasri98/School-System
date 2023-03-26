@@ -1,42 +1,138 @@
-const studentForm = document.getElementById("student-form");
-const studentTable = document.getElementById("student-table");
+// const studentForm = document.getElementById("student-form");
+// const studentTable = document.getElementById("student-table");
 
-// Function to create a new row in the table
-function addStudentToTable(student) {
-  const row = studentTable.insertRow();
-  row.innerHTML = `
-    <td>${student.name}</td>
-    <td>${student.dob}</td>
-    <td>${student.gender}</td>
-    <td>${student.phone}</td>
-    <td>${student.grade}</td>
-  `;
+// function addStudentToTable(student) {
+//   const row = studentTable.insertRow();
+//   row.innerHTML = `
+//     <td>${student.name}</td>
+//     <td>${student.dob}</td>
+//     <td>${student.gender}</td>
+//     <td>${student.phone}</td>
+//     <td>${student.grade}</td>
+//   `;
+// }
+
+// studentForm.addEventListener("submit", function(event) {
+//   event.preventDefault();
+
+//   const name = document.getElementById("name").value;
+//   const dob = document.getElementById("dob").value;
+//   const gender = document.getElementById("gender").value;
+//   const phone = document.getElementById("phone").value;
+//   const grade = document.getElementById("grade").value;
+
+//   const student = {
+//     name: name,
+//     dob: dob,
+//     gender: gender,
+//     phone: phone,
+//     grade: grade
+//   };
+
+//   addStudentToTable(student);
+
+//   studentForm.reset();
+// });
+
+
+//constructor Task
+
+
+
+let arrData=[];
+if(localStorage.arrData != null){
+    arrData=JSON.parse(localStorage.arrData);
+    render();
+  }
+ 
+let footer00=document.getElementById("myDIV");
+let userName;
+let userDOB;
+let userGender;
+let userNumber;
+let userGrade;
+let userMajor;
+let userImg;
+
+
+let DataCollected=document.getElementById("datasub");
+
+DataCollected.addEventListener("submit",function(event){
+
+
+  userName=event.target.username.value;
+  userDOB=event.target.userDOB.value;
+  userGender=event.target.usergender.value;
+  userNumber=event.target.usernumber.value;
+  userGrade=event.target.usergrade.value;
+  userMajor=event.target.usermajor.value;
+  userImg=event.target.userimg.value;
+  DataCollected.reset();
+
+
+  let student = new Person(userName,userDOB ,userGender,userNumber,userGrade,userMajor,userImg);
+
+     arrData.push(student);
+     localStorage.setItem('arrData',JSON.stringify(arrData) );
+     render();
+});
+
+
+function Person(userName,userDOB ,userGender,userNumber,userGrade,userMajor,userImg) {
+  this.userName = userName; 
+  this.userDOB = userDOB;
+  this.userGender = userGender;
+  this.userNumber = userNumber;
+  this.userGrade = userGrade;
+  this.userMajor = userMajor;
+  this.userImg = userImg;
+  
+
 }
 
-// Add an event listener to the form
-studentForm.addEventListener("submit", function(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
 
-  // Get the values from the form
-  const name = document.getElementById("name").value;
-  const dob = document.getElementById("dob").value;
-  const gender = document.getElementById("gender").value;
-  const phone = document.getElementById("phone").value;
-  const grade = document.getElementById("grade").value;
 
-  // Create a new student object
-  const student = {
-    name: name,
-    dob: dob,
-    gender: gender,
-    phone: phone,
-    grade: grade
-  };
+//-------------show data-----------------//
+function render(){
+  for(let i=0;i<arrData.length;i++){
 
-  // Add the student to the table
-  addStudentToTable(student);
+    let sdcard= document.getElementById("student_card");
+    let divContainer = document.createElement('div');
+    let img0 = document.createElement('img');
+    img0.src=`${arrData[i].userImg}`;
+    let ul = document.createElement("ul");
+    let li1= document.createElement("li");
+    li1.textContent=`Name: ${arrData[i].userName}`;
+    let li2= document.createElement("li");
+    li2.textContent=`Gender: ${arrData[i].userGender}`;
+    let li3= document.createElement("li");
+    li3.textContent=`Number: ${arrData[i].userNumber}`;
+    let li4= document.createElement("li");
+    li4.textContent=`Grade: ${arrData[i].userGrade}`;
+    let li5= document.createElement("li");
+    li5.textContent=`Major: ${arrData[i].userMajor}`;
+  
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    ul.appendChild(li4);
+    ul.appendChild(li5);
+  
+    divContainer.appendChild(img0);
+    divContainer.appendChild(ul);
+    sdcard.appendChild(divContainer);
 
-  // Reset the form
-  studentForm.reset();
+  }
+}
+
+
+
+
+window.addEventListener('load', () => {
+  localStorage.clear(); // clear local storage
+  document.getElementById('myForm').reset(); // reset form
 });
+
+
+
+
